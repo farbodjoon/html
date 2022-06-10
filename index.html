@@ -1,34 +1,31 @@
 <html>
 
 <head>
+    <title>
+        buttons
+    </title>
+
     <style>
-        table,
-        td,
-        th {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+
     </style>
 
+    <script>
+        function myclick() {
+            document.getElementById('myFamily').innerHTML = "farbod";
+            document.getElementById('myFamily').style.color = "rgb(255,0,0)";
+            document.getElementById('myFamily').style.backgroundColor="rgb(255,255,0)";
+            document.getElementById('myFamily').style.width = "100px";
+
+            console.log('farnaz');
+            console.error('farnaz')
+            console.warn('farnaz')
+        }
+    </script>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <th colspan="3">information</th>
-        </tr>
-
-    <tr>
-        <th>Farbod</th>
-        <td rowspan="2">Ebrahimi</td>
-        <td style="text-align: center;">USA</td>
-    </tr>
-
-    <tr>
-        <th>Farnaz</th>
-        <td>germany</td>
-    </tr>
-    </table>
+    <p id="myFamily">last test</p>
+    <button type="button" onclick="myclick()">click me</button>
 </body>
 
 </html>
