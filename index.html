@@ -1,14 +1,61 @@
 <html>
-    
-    <head>
-    
-    <title>buttons</title>
 
-<script src="./myScripts.js" ></script>
+<head>
+    <script src="./myScripts.js"></script>
+    <link rel="stylesheet" href="./myStyles.css">
 </head>
 
 <body>
-    <p id="book">farbod</p>
-<button onclick="cumputer()">click it</button>
+
+    <div style="display:flex ;flex-direction: row;">
+        <div class="week" style="background-color: chocolate;" onmouseover="days(0)" onmouseout="daysOut()">
+            شنبه
+        </div>
+
+        <div class="week" style="background-color: blue" onmouseover="over()" onmouseout="out(1) ">
+            یک شنبه
+        </div>
+
+        <div class="week" style="background-color: blueviolet" onmouseover="over()" onmouseout="out(2)">
+            دو شنبه
+        </div>
+
+        <div class="week" style="background-color: rosybrown" onmouseover="over()" onmouseout="out(3)">
+            سه شنبه
+        </div>
+
+        <div class="week" style="background-color: gold" onmouseover="over()" onmouseout="out(4)">
+            چهار شنبه
+        </div>
+
+        <div class="week" style="background-color: green;" onmouseover="over()" onmouseout="out(5)">
+            پنج شنبه
+        </div>
+
+        <div class="week" style="background-color: palevioletred;" onmouseover="over()" onmouseout="out(6)">
+            جمعه
+        </div>
+        <p id="day_p_tag">day</p>
+
+    </div>
+    <hr />
+    <div style="display: flex;flex-direction: row;">
+        <button class="week" onclick="mounth(1)" style="background-color: red;">
+            فروردین
+        </button>
+    </div>
+
+    <p id="year">
+        test
+    </p>
+
+    <hr />
+    <div style="border-style: solid;border-color: blue;border-width: 2px;border-radius:10px ;display: flex; flex-direction: column;align-items: center;">
+
+
+        <p id="note">study</p>
+        <button onclick="fullName('0')">click</button>
+    </div>
 </body>
+
 </html>
